@@ -1,0 +1,12 @@
+.Navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 0 15px;
+  &__Right {
+    display: flex;
+    align-items: center;
+  }
+}

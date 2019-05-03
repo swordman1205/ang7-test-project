@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .AppContainer {
+    flex: 1;
+    display: flex;
+    .MainContent {
+      overflow: auto;
+      flex: 1;
+      padding: 15px;
+    }
+  }
+}
