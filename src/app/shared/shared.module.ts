@@ -1,13 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WidgetComponent } from './components';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    WidgetComponent
+  ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxChartsModule
   ],
   exports: [
-    CommonModule
+    CommonModule,
+    NgxChartsModule,
+    WidgetComponent
   ]
 })
 export class SharedModule { }

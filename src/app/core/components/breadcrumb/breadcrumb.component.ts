@@ -31,10 +31,12 @@ export class BreadcrumbComponent implements OnInit {
         let routeData = route.snapshot.data;
 
         let label = routeData['title'];
+        let icon = routeData['icon'];
 
         this.breadcrumbs.push({
-          url: url,
-          label: label
+          url,
+          label,
+          icon,
         });
 
       });

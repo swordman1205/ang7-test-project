@@ -1,7 +1,10 @@
 <aside class="Sidebar">
-  <ul>
-    <li *ngFor="let link of links">
-      <a [routerLink]="[link.path]">{{ link.title }}</a>
+  <ul class="Sidebar__List">
+    <li *ngFor="let link of links" class="Sidebar__List__Item">
+      <a [routerLink]="[link.path]" routerLinkActive="Sidebar__List__Item__Link--Active" class="Sidebar__List__Item__Link">
+        <i class="fa" [ngClass]="'fa-' + link.icon"></i>
+        {{ link.title }}
+      </a>
     </li>
   </ul>
 </aside>

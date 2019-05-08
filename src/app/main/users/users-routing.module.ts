@@ -7,7 +7,8 @@ const routes: Route[] = [
     path: '',
     component: UsersComponent,
     data: {
-      title: 'Users'
+      title: 'Users',
+      icon: 'user'
     }
   }
 ];

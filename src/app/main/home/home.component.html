@@ -1,3 +1,74 @@
-<p>
-  home works!
-</p>
+<div class="Home">
+  <app-widget title="Status">
+    <table class="Home__DataTable">
+      <thead>
+        <tr>
+          <th *ngFor="let header of statusDataTable.headers">
+            {{ header.title }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of statusDataTable.data">
+          <td *ngFor="let header of statusDataTable.headers">
+            {{ row[header.name] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </app-widget>
+  <app-widget title="Activity">
+    <table class="Home__DataTable">
+      <thead>
+        <tr>
+          <th *ngFor="let header of activityDataTable.headers">
+            {{ header.title }}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of activityDataTable.data">
+          <td *ngFor="let header of activityDataTable.headers">
+            {{ row[header.name] }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </app-widget>
+  <app-widget title="Active Alarms">
+    <div class="Home__Chart">
+      <ngx-charts-pie-chart
+        [view]="[250, 250]"
+        [legend]="false"
+        [doughnut]="true"
+        [labels]="false"
+        [scheme]="activeAlarms.scheme"
+        [results]="activeAlarms.data">
+      </ngx-charts-pie-chart>
+      <ul class="Home__Chart__Detail">
+        <li *ngFor="let item of activeAlarms.data; let i = index">
+          <span [style.backgroundColor]="activeAlarms.scheme.domain[i]"></span>
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+  </app-widget>
+  <app-widget title="Open Tickets">
+    <div class="Home__Chart">
+      <ngx-charts-pie-chart
+        [view]="[250, 250]"
+        [legend]="false"
+        [doughnut]="true"
+        [labels]="false"
+        [scheme]="activeAlarms.scheme"
+        [results]="activeAlarms.data">
+      </ngx-charts-pie-chart>
+      <ul class="Home__Chart__Detail">
+        <li *ngFor="let item of activeAlarms.data; let i = index">
+          <span [style.backgroundColor]="activeAlarms.scheme.domain[i]"></span>
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+  </app-widget>
+</div>

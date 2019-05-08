@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'color';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  margin: 0;
+  background: rgb(12,99,160);
+  background: linear-gradient(360deg, rgba(12,99,160,1) 0%, rgba(2,36,69,1) 100%);
+  color: white;
+  font-family: sans-serif;
+}

@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   links: any = [
-    { path: 'home', title: 'Home' },
-    { path: 'reports', title: 'Reports' },
-    { path: 'users', title: 'Users' }
+    { path: 'home', icon: 'home', title: 'Home' },
+    { path: 'reports', icon: 'home', title: 'Reports' },
+    { path: 'users', icon: 'user', title: 'Users' }
   ];
 
   constructor() { }
