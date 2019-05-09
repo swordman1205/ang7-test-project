@@ -1,0 +1,16 @@
+<div class="Chart">
+  <ngx-charts-pie-chart
+    [view]="[250, 250]"
+    [legend]="false"
+    [doughnut]="true"
+    [labels]="false"
+    [scheme]="dataChart?.scheme"
+    [results]="dataChart?.data">
+  </ngx-charts-pie-chart>
+  <ul class="Chart__Detail">
+    <li *ngFor="let item of dataChart?.data; let i = index">
+      <span [style.backgroundColor]="dataChart?.scheme.domain[i]"></span>
+      {{ item.name }}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+<table class="DataTable">
+  <thead>
+    <tr>
+      <th *ngFor="let header of dataTable?.headers">
+        {{ header.title }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of dataTable?.data">
+      <td *ngFor="let header of dataTable?.headers">
+        {{ row[header.name] }}
+      </td>
+    </tr>
+  </tbody>
+</table>
