@@ -80,43 +80,43 @@ export class HomeComponent implements OnInit {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       },
       {
         user: 'admin',
         action: 'Get Asset Ticket Summary',
         item: 'CDC_Asset',
-        Time: 'Nov 12, 2018 5:55 AM'
+        time: 'Nov 12, 2018 5:55 AM'
       }
     ]
   };
